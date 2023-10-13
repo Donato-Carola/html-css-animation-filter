@@ -99,7 +99,22 @@
     width: 500px;
 }
 
+.ex-6-img:hover{
+    filter:sepia();
+    
+}
 
+.ex-7-img:hover{
+    transition: all 4s;
+    filter: sepia();
+
+}
+
+.ex-8-img:hover{
+    filter: sepia();
+    transition: all 4s;
+    border-radius: 30px;
+}
 
 
 
@@ -117,9 +132,27 @@
     margin: 50px 100px;
     width: 400px;
 }
+
+.ex-9-img:hover{
+    margin: 0;
+    width: 100%;
+    border-radius: 30px;
+    transition: all 4s;
+    filter:sepia()
+}
+
+
+
+
+
+
 .ex-10-icon {
     font-size: 60px;
 }
+
+
+
+
 .ex-11-icon {
     font-size: 60px;
 }
