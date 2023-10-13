@@ -76,17 +76,12 @@
 }
 
 .ex-5-square:hover{
-          transition: all 1s;
-          margin: 0;
-          height: 100px;
-          width: 100px;
+    transition: all 4s;
+          transform: scale(2);
 }
 
 .ex-5-square:active{
-       transition: all 2s;
-       height: 20px;
-       width: 20px;
-       margin: 40px;
+       transform: scale(0.5);
     
        
 }
@@ -134,8 +129,7 @@
 }
 
 .ex-9-img:hover{
-    margin: 0;
-    width: 100%;
+    transform: scale(1.5);
     border-radius: 30px;
     transition: all 4s;
     filter:sepia()
@@ -150,12 +144,36 @@
     font-size: 60px;
 }
 
+.ex-10-icon{
+    animation-name: veloce;
+    animation-duration: 5s;
+}
 
+@keyframes veloce{
+    0%{
+          transform: rotate(3turn);
+    }
+}
 
 
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover{
+    animation-name: veloce2;
+    animation-duration: 5s;
+}
+
+@keyframes veloce2{
+    0%{
+          transform: rotate(3turn);
+    }
+}
+
+
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -169,6 +187,10 @@
     text-align: center;
     text-decoration: none;
 }
+
+
+
+
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
@@ -177,6 +199,7 @@
     width: 60px;
     height: 20px;
 }
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
@@ -184,4 +207,37 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: rigasopra 2s ;
+}
+
+@keyframes rigasopra{
+    0%{  
+               left: 0;
+     }
+    50%{  
+         left: 70%;
+      }
+    100%{  
+      left: 0;
+     }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: rigasotto 2s ;
+}
+
+@keyframes rigasotto{
+    0%{  
+               right: 0%;
+     }
+    50%{  
+         right: 70%;
+      }
+    100%{  
+      right: 0%;
+     }
 }
